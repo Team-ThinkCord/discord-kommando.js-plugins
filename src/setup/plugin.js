@@ -2,10 +2,7 @@ const { EventEmitter } = require('events');
 const fs = require('fs');
 
 class plugin extends EventEmitter {
-    /**
-     * @param name {string} Plugin name
-     * @param perms {string[]} Plugin permissions
-     */
+    // @param [perms] {string[]} Plugin permissions
     constructor(perms) {
         super();
         if (!name) throw new TypeError("Cannot read property 'name' of undefined");
