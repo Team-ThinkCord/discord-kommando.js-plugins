@@ -14,3 +14,5 @@ class plugin extends EventEmitter {
         this.perms = perms ?? [];
     }
 }
+
+module.exports = plugin;
