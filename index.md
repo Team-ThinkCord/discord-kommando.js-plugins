@@ -35,7 +35,9 @@ Plugin permissions
 ##### messageCreate
 
 | Parameter | Type |
+
 | --------- | ---- |
+
 | message   | [Discord.Message](https://discord.js.org/#/docs/main/stable/class/Message) |
 
 ## Types
