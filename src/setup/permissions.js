@@ -1,5 +1,6 @@
 var permissions = {
-    GET_MESSAGES: "msg"
+    GET_MESSAGES: "msg",
+    GET_ERRORS: "err"
 }
 
 module.exports = {
