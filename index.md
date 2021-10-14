@@ -33,10 +33,25 @@ Plugin permissions
 
 #### Events
 ##### messageCreate
-
 | Parameter | Type |
 |:---------:|:----:|
-| `message`   | [Discord.Message](https://discord.js.org/#/docs/main/stable/class/Message) |
+| `message` | [Discord.Message](https://discord.js.org/#/docs/main/stable/class/Message) |
+
+##### debug
+| Parameter | Type |
+|:---------:|:----:|
+| `message` | string |
+
+##### warn
+| Parameter | Type |
+|:---------:|:----:|
+| `message` | string |
+
+##### error
+| Parameter | Type |
+|:---------:|:----:|
+| `message` | string |
+| `client`  | [Discord.Client](https://discord.js.org/#/docs/main/stable/class/Client) |
 
 ## Types
 ### PluginPerms
