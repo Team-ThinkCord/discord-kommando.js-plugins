@@ -26,7 +26,7 @@ Plugin default config values: ${JSON.stringify(this.defaultConfig)}`), 5000);
     // @type {object}
     get config() {
         if (!fs.existsSync("kommando_config.json")) return this.emit("warn", "No config found");
-        return JSON.parse(fs.readFileSync("kommando_config.json")).pluginConfigs[this.name];
+        return JSON.parse(fs.readFileSync("kommando_config.json")).pluginConfig[this.name];
     }
     
     // @type {string}
@@ -37,7 +37,7 @@ Plugin default config values: ${JSON.stringify(this.defaultConfig)}`), 5000);
     
     // @param config {object} Config to reset
     setDefaultConfig(config) {
-        this.defaultConfig = config?? {};
+        this.defaultConfig = config ?? {};
         this.emit("debug", "Default config reset");
     }
 }

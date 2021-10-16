@@ -1,6 +1,6 @@
 {
   "name": "discord-kommando.js-plugins",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The official discord-kommando.js plugin creation module",
   "main": "src/main.js",
   "scripts": {
