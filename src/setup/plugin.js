@@ -35,6 +35,12 @@ Plugin default config values: ${JSON.stringify(this.defaultConfig)}`), 5000);
         return JSON.parse(fs.readFileSync("kommando_config.json")).prefix;
     }
     
+    // @type {object}
+    get kommandoConfig() {
+        if (!fs.existsSync("kommando_config.json")) return this.emit("warn", "No config found");
+        return JSON.parse(fs.readFileSync("kommando_config.json"));
+    }
+    
     // @param config {object} Config to reset
     setDefaultConfig(config) {
         this.defaultConfig = config ?? {};
